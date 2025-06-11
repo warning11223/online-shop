@@ -14,7 +14,7 @@ type Props = {
 export const Products: FC<Props> = ({ initialProducts }) => {
     const { products, loading, hasMore } = useInfiniteScroll({
         initialProducts,
-        fetchUrl: "http://o-complex.com:1337/products",
+        fetchUrl: "api/products",
     });
 
     return (

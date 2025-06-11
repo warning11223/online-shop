@@ -2,7 +2,7 @@
 
 export async function submitOrder(orderData: { phone: string, cart: Array<{ id: number, quantity: number }> }) {
     try {
-        const response = await fetch("http://o-complex.com:1337/order", {
+        const response = await fetch("api/order", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

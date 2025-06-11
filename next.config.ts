@@ -17,6 +17,18 @@ const nextConfig: NextConfig = {
             },
         ],
     },
+    async rewrites() {
+        return [
+            {
+                source: '/api/products',
+                destination: 'http://o-complex.com:1337/products',
+            },
+            {
+                source: '/api/order',
+                destination: 'http://o-complex.com:1337/order',
+            },
+        ];
+    },
 };
 
 export default nextConfig;
