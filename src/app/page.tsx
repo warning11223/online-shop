@@ -12,7 +12,7 @@ export default async function Home() {
     return (
         <div className={styles.page}>
             <h1 className={styles.title}>
-                тестовое задание
+                Интернет магазин
             </h1>
             <main className={styles.main}>
                 <Reviews reviews={reviews} />
